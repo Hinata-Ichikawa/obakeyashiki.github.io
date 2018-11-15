@@ -1584,7 +1584,7 @@ var g=u.default.env.isPC?99999:620,f=u.default.env.isPC?99999:1200,l=u.default.e
 									$(document.body).css( "padding-top", "0" ),
 									$(".day02_bug_wrapper").delay(1000).queue(function(next) {
 									    // $(this).addClass('open');
-									    location.href='http://geikousai-ncu.com';
+									    location.href='https://hinata-ichikawa.github.io/obakeyashiki.github.io/obakeyashiki/top.html';
 									    next();
 									}),
 									Promise.resolve().then(function(){

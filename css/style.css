@@ -1,0 +1,500 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-size: 100%; }
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+  background-color: #fff;
+  -webkit-text-size-adjust: 1000px; }
+  @media screen and (max-width: 800px) {
+    html, body {
+      background-color: #e8e8e8; } }
+
+.wrapper {
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "游ゴシック", Meiryo, "メイリオ", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+   }
+  @media screen and (min-width: 800px) {
+    .wrapper {
+  } }
+
+section {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 25px; }
+
+.clearfix{
+  margin: 0 5%;
+}
+
+@media screen and (min-width: 800px) {
+  .day01_wrapper {
+    overflow: auto;
+    } }
+
+@media screen and (min-width: 1600px) {
+  .day01_wrapper {
+    overflow: auto;
+    } }
+
+.day01 {
+  padding-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 3; }
+  .day01.close {
+    display: none; }
+  @media screen and (min-width: 800px) {
+    .day01 {
+      width: 70%;
+   } }
+  @media screen and (min-width: 800px) {
+    .day01 .border {
+      display: none;
+  } }
+
+body{
+  font-family: 'ヒラギノ角ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #555;
+  background-color: #fff;
+  background-size: 100%;
+  padding-top: 5px;
+
+}
+h1{
+  margin: 0;
+}
+header,
+main{
+  width: 70%;
+  margin: 0 auto;
+}
+main,
+{
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  padding: 30px;
+}
+/*–––––––––––––––––-------------メニュー--------------------------------*/
+header{
+  margin: 1vh auto 3vh auto;
+}
+@media (max-width: 767px) {
+  header,
+  main,
+  footer {
+    width: 95%; } }
+.nav {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (max-width: 767px) {
+    .nav {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end; } }
+
+.nav__item {
+  -webkit-flex-grow: 1;
+  flex-grow: 1; }
+  .nav__item:first-child {
+    -webkit-flex-grow: 8;
+    flex-grow: 8; }
+  .nav__item:not(:first-child) {
+    text-align: right; }
+  @media (max-width: 767px) {
+    .nav__item:first-child {
+      width: 100%; }
+    .nav__item:not(:first-child) {
+      -webkit-flex-grow: 0;
+      flex-grow: 0;
+      margin: 10px 0 0 10px; } }
+
+/*–––––––––––––––––--------------メイン---------------------------------*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix { display: block; }
+h3{
+  font-size: 26px;
+  display: inline-block;
+}
+.flxmain{
+  background-color: #ffff00;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex-direction: column; /* Safari */
+  flex-direction:         column;
+}
+.day{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .day{
+    width: 35%;
+    float: left;
+  }
+  .day p{
+    margin: 0;
+    padding-right: auto;
+  }
+  .contents{
+    width: 65%;
+    float: left;
+    display: inline-block;
+    margin-bottom: 90px;
+  }
+}
+.contents p{
+  padding-bottom: 30px;
+  margin: 0;
+  line-height: 27px;
+}
+.contents img{
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------フッター--------------------------------*/
+.title {
+  padding-bottom: 1vh;
+  padding-left: 15px;
+  border-bottom: 2px solid #595959;
+  border-left: 13px solid #595959; }
+  .title:last-of-type {
+    margin-bottom: 5vh; }
+  @media (max-width: 767px) {
+    .title {
+      margin-top: 0; } }
+  .list{
+    margin-top: 100px;
+  }
+
+.link {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*--------------------------------反転ページ----------------------------------*/
+
+.movie-slick{
+  width: 70%;
+  margin: 20px auto 0px;
+  text-align: center;
+}
+@media screen and (max-width:490px){
+  .movie-slick iframe{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+.contents_ura{
+  background-color: #6a3578;
+  min-height: 1500px;
+}
+@media screen and (max-width:1500px){
+  .contents_ura{
+  background-color: #6a3578;
+  min-height: 1000px;
+  }
+}
+
+
+footer{
+  position: relative;
+  height: 80px;
+}
+
+.footer_ura{
+  position: fixed;
+  bottom: 0;
+  background-image: url(../img/00_footerLong.png);
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  background-size: cover;
+}
+.footer_ura p{
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  /*font-size: 1vh;*/
+}
+
+#logo{
+  width: 314px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+/*noizeAnimation*/
+.noizeAnim{
+    height: 1px;
+    background: url(../img/logo_ura.png) 0 0 no-repeat;
+    position: relative;
+}
+
+#logo_0{ background-position: 0 -0px; }
+#logo_1{ background-position: 0 -1px; }
+#logo_2{ background-position: 0 -2px; }
+#logo_3{ background-position: 0 -3px; }
+#logo_4{ background-position: 0 -4px; }
+#logo_5{ background-position: 0 -5px; }
+#logo_6{ background-position: 0 -6px; }
+#logo_7{ background-position: 0 -7px; }
+#logo_8{ background-position: 0 -8px; }
+#logo_9{ background-position: 0 -9px; }
+#logo_10{ background-position: 0 -10px; }
+#logo_11{ background-position: 0 -11px; }
+#logo_12{ background-position: 0 -12px; }
+#logo_13{ background-position: 0 -13px; }
+#logo_14{ background-position: 0 -14px; }
+#logo_15{ background-position: 0 -15px; }
+#logo_16{ background-position: 0 -16px; }
+#logo_17{ background-position: 0 -17px; }
+#logo_18{ background-position: 0 -18px; }
+#logo_19{ background-position: 0 -19px; }
+#logo_20{ background-position: 0 -20px; }
+#logo_21{ background-position: 0 -21px; }
+#logo_22{ background-position: 0 -22px; }
+#logo_23{ background-position: 0 -23px; }
+#logo_24{ background-position: 0 -24px; }
+#logo_25{ background-position: 0 -25px; }
+#logo_26{ background-position: 0 -26px; }
+#logo_27{ background-position: 0 -27px; }
+#logo_28{ background-position: 0 -28px; }
+#logo_29{ background-position: 0 -29px; }
+#logo_30{ background-position: 0 -30px; }
+#logo_31{ background-position: 0 -31px; }
+#logo_32{ background-position: 0 -32px; }
+#logo_33{ background-position: 0 -33px; }
+#logo_34{ background-position: 0 -34px; }
+#logo_35{ background-position: 0 -35px; }
+#logo_36{ background-position: 0 -36px; }
+#logo_37{ background-position: 0 -37px; }
+#logo_38{ background-position: 0 -38px; }
+#logo_39{ background-position: 0 -39px; }
+#logo_40{ background-position: 0 -40px; }
+#logo_41{ background-position: 0 -41px; }
+#logo_42{ background-position: 0 -42px; }
+#logo_43{ background-position: 0 -43px; }
+#logo_44{ background-position: 0 -44px; }
+#logo_45{ background-position: 0 -45px; }
+#logo_46{ background-position: 0 -46px; }
+#logo_47{ background-position: 0 -47px; }
+#logo_48{ background-position: 0 -48px; }
+#logo_49{ background-position: 0 -49px; }
+#logo_50{ background-position: 0 -50px; }
+#logo_51{ background-position: 0 -51px; }
+#logo_52{ background-position: 0 -52px; }
+#logo_53{ background-position: 0 -53px; }
+#logo_54{ background-position: 0 -54px; }
+#logo_55{ background-position: 0 -55px; }
+#logo_56{ background-position: 0 -56px; }
+#logo_57{ background-position: 0 -57px; }
+#logo_58{ background-position: 0 -58px; }
+#logo_59{ background-position: 0 -59px; }
+#logo_60{ background-position: 0 -60px; }
+#logo_61{ background-position: 0 -61px; }
+#logo_62{ background-position: 0 -62px; }
+#logo_63{ background-position: 0 -63px; }
+#logo_64{ background-position: 0 -64px; }
+#logo_65{ background-position: 0 -65px; }
+#logo_66{ background-position: 0 -66px; }
+#logo_67{ background-position: 0 -67px; }
+#logo_68{ background-position: 0 -68px; }
+#logo_69{ background-position: 0 -69px; }
+#logo_70{ background-position: 0 -70px; }
+#logo_71{ background-position: 0 -71px; }
+#logo_72{ background-position: 0 -72px; }
+#logo_73{ background-position: 0 -73px; }
+#logo_74{ background-position: 0 -74px; }
+#logo_75{ background-position: 0 -75px; }
+#logo_76{ background-position: 0 -76px; }
+#logo_77{ background-position: 0 -77px; }
+#logo_78{ background-position: 0 -78px; }
+#logo_79{ background-position: 0 -79px; }
+#logo_80{ background-position: 0 -80px; }
+#logo_81{ background-position: 0 -81px; }
+#logo_82{ background-position: 0 -82px; }
+#logo_83{ background-position: 0 -83px; }
+#logo_84{ background-position: 0 -84px; }
+#logo_85{ background-position: 0 -85px; }
+#logo_86{ background-position: 0 -86px; }
+#logo_87{ background-position: 0 -87px; }
+#logo_88{ background-position: 0 -88px; }
+#logo_89{ background-position: 0 -89px; }
+#logo_90{ background-position: 0 -90px; }
+#logo_91{ background-position: 0 -91px; }
+#logo_92{ background-position: 0 -92px; }
+#logo_93{ background-position: 0 -93px; }
+
+/*noizeAnimation*/
+
+
+
+
+
+
+
+
+section{
+	width: 100%;
+}
+
+.day01{
+	padding: 0;
+}
+
+.clearfix{
+	margin: 0;
+}
+
+.header{
+	position: relative;
+	width: 100vw;
+	height: 60px;
+	background-color: #fff;
+}
+
+.shidaisai-img{
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+}
+
+.menu-img{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 40px;
+}
+
+.title-box{
+	width: 100vw;
+	background-color: #b8392c;
+}
+
+.title-box h3{
+	color: #fff;
+	font-size: 27px;
+	margin: 15px;
+}
+
+.nav{
+	text-align: left;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #666;
+}
+
+.nav *{
+	margin: 15px 5px 0;
+}
+
+.home-img{
+	width: 20px;
+	vertical-align: middle;
+}
+
+.home{
+	color: #9e352a;
+}
+
+.next-img{
+	width: 15px;
+}
+
+.obakeyashiki{
+	margin-right: 70px;
+}
+
+.thumbnail{
+	display: block;
+	width: 90%;
+	margin: 50px auto;
+}
+
+.title{
+	display: inline-block;
+	width: 90%;
+	border-bottom: 2px solid #b8392b;
+	border-left: 13px solid #b8392b;
+	box-sizing: border-box;
+	margin-left: 5%;
+}
+
+.contents{
+	width: 90%;
+	margin: 0 auto;
+}
